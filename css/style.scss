@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+$color-1: #e74c3c;
+$color-2: #2c3e50;
+$color-3: #8e44ad;
+$color-4: #2980b9;
+$color-5: #ffffff;
+$color-6: #0354cc;
+$color-7: #444;
+$color-8: #f9f9f9;
+$color-9: #777;
+$color-10: #222;
+$color-11: #eee;
+
+
+$Nunito: 'Nunito', sans-serif;
+$Open-Sans: 'Open Sans', sans-serif;
+
+
+
+.clr {
+    clear: both;
+}
+
+@mixin wrap-container {
+    width: 75%;
+    margin: auto;
+}
+
+@mixin flex-container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: auto !important;
+    background-color: $color-5;
+    font-family: $Nunito;
+}
+
+.head-container {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-top: 20px;
+    font-size: 35px;
+
+    i {
+        margin-right: 15px;
+
+    }
+}
+
+nav {
+
+
+    li {
+        display: inline;
+        margin-right: 30px;
+    }
+
+    a {
+        padding: 8px 18px;
+        color: $color-4;
+        text-decoration: none;
+        transition: all 0.7s;
+        font-weight: 500;
+    }
+
+    a:hover {
+        color: #21abf9;
+    }
+
+    .head-btn {
+        width: 140px;
+        height: 75px;
+        border: none;
+        background-color: $color-6;
+        color: $color-5;
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+
+// start banner //
+#banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.item img {
+    opacity: 2.5;
+}
+
+.carousel-text {
+    width: 60%;
+    height: auto;
+    padding-top: 20px;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+
+    h5 {
+        font-size: 56px;
+        font-weight: 800;
+        color: $color-5;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: $color-5;
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        padding: 0px 60px 20px 60px;
+    }
+
+    .slide-btn {
+        margin-left: 320px;
+        margin-top: 30px;
+        width: 180px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        background-color: $color-6;
+        color: $color-5;
+        top: 35%;
+        left: 20%;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 0.7s;
+    }
+}
+
+.slide-btn:hover {
+    background-color: #21abf9;
+}
+
+//end  banner//
+
+
+// start middle1 //
+
+#middle1 {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.container {
+    @include wrap-container();
+}
+
+.text-box {
+    width: 49%;
+    height: auto;
+    border-left: 2px solid #2c3e50;
+    padding-left: 15px;
+
+    h2 {
+        font-size: 35px;
+        font-weight: 700;
+        font-family: $Nunito;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: $Open-Sans;
+        color: #ababab;
+    }
+}
+
+
+// end middle1 //
+
+// start middle2 //
+
+#middle2 {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.container1 {
+    @include flex-container();
+}
+
+.fbox {
+    width: 23%;
+    height: 250px;
+    border: 1px solid $color-11;
+    border-radius: 5px;
+
+
+    i {
+        padding: 20px 0px 20px 20px;
+        font-size: 40px;
+        transition: all 0.7s;
+    }
+
+
+    h4 {
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: $color-7;
+        font-family: $Nunito;
+    }
+
+    p {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 15px;
+        color: $color-7;
+        font-family: $Open-Sans;
+    }
+
+    .read-button {
+        margin-top: 20px;
+        margin-left: 20px;
+        border: none;
+        border-bottom: 1.5px solid $color-6;
+        font-size: 16px;
+        color: $color-6;
+        font-family: $Open-Sans;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+}
+
+.fbox:hover i {
+    transform: translateY(-12px);
+}
+
+.read-button:hover {
+    color: $color-1;
+}
+
+
+//end middle2 //
+
+//start middle3 //
+#middle3 {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: $color-8;
+}
+
+.container2 {
+    @include flex-container();
+}
+
+.text-det-box {
+    width: 45%;
+}
+
+.textbox1 {
+    h3 {
+        font-size: 23px;
+        font-family: $Nunito;
+        font-weight: 600;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-7;
+        transition: all 0.7s;
+    }
+
+    a:hover {
+        color: #21abf9;
+    }
+
+    p {
+        padding-top: 15px;
+        font-size: 16px;
+        font-family: $Open-Sans;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $color-9;
+        padding-bottom: 20px;
+    }
+}
+
+.mid2-img {
+    img {
+        height: 350px;
+        border-radius: 10px;
+    }
+}
+
+// end middle3 //
+
+
+// strat middle4 //
+
+#middle4 {
+    width: 100%;
+    height: 550px;
+    padding-bottom: 50px;
+    background-image: url(../images/middle4.jpg);
+    background-size: 100% 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 600px;
+    background-color: rgba(26, 15, 249, 0.566);
+}
+
+.mid4-text {
+    padding-top: 70px;
+    margin: auto;
+    width: 50%;
+
+    h3 {
+        padding-left: 20px;
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        color: $color-5;
+        font-family: $Nunito;
+    }
+
+    p {
+        padding: 20px 30px 20px 30px;
+
+        font-size: 18px;
+        font-family: $Open-Sans;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.5;
+        color: $color-5;
+
+    }
+}
+
+.mid4-video {
+    padding-top: 20px;
+    margin-left: 400px;
+}
+
+// end middle4 //
+
+// start service //
+
+#service {
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.service-box {
+    width: 31%;
+    height: auto;
+    border: 1px solid $color-11;
+    border-radius: 5px;
+
+
+    i {
+        padding: 20px 20px 20px 20px;
+        font-size: 40px;
+        transition: all 0.7s;
+        margin-left: 120px;
+
+    }
+
+
+
+    h4 {
+
+        font-size: 22px;
+        font-weight: 600;
+        color: $color-7;
+        font-family: $Nunito;
+        text-align: center;
+    }
+
+    p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        color: $color-7;
+        font-family: $Open-Sans;
+        text-align: center;
+    }
+}
+
+.service-box:hover i {
+    transform: translateY(-12px);
+}
+
+//end service //
+
+//start income //
+
+#income {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $color-8;
+}
+
+.income-box {
+    width: 31%;
+    height: auto;
+    margin-top: 50px;
+
+
+    img {
+        height: 250px;
+        width: 350px;
+        border-radius: 10px;
+
+    }
+
+    h4 {
+        font-size: 22px;
+        font-weight: 600;
+        color: $color-7;
+        font-family: $Nunito;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-7;
+        transition: all 0.7s;
+    }
+
+    a:hover {
+        color: #21abf9;
+    }
+
+    p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        color: $color-7;
+        font-family: $Open-Sans;
+
+    }
+}
+
+// end income //
+
+// strat middle5 //
+#middle5 {
+    width: 100%;
+    height: 500px;
+    padding-bottom: 50px;
+    background-image: url(../images/middle5.jpg);
+    background-size: 100% 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 550px;
+    background-color: rgba(26, 15, 249, 0.566);
+}
+
+.mid5-text {
+    padding-top: 90px;
+    margin: auto;
+    width: 50%;
+
+    h3 {
+        padding-left: 20px;
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+        color: $color-5;
+        font-family: $Nunito;
+    }
+
+    p {
+        padding: 20px 30px 20px 30px;
+        font-size: 18px;
+        font-family: $Open-Sans;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.5;
+        color: $color-5;
+
+    }
+
+    .mid5-btn {
+        margin-left: 280px;
+        margin-top: 30px;
+        width: 180px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        background-color: $color-6;
+        color: $color-5;
+        top: 35%;
+        left: 20%;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        transition: all 0.7s;
+        cursor: pointer;
+    }
+
+    .mid5-btn:hover {
+        background-color: #21abf9;
+    }
+}
+
+// end middle5 //
+
+//start contact //
+#contact {
+    width: 100%;
+    height: auto;
+    background-color: $color-10;
+}
+
+.con-box1 {
+    width: 30%;
+    padding-top: 30px;
+
+    i {
+        margin-right: 15px;
+        font-size: 40px;
+
+    }
+
+    h2 {
+        color: $color-5;
+        font-family: $Nunito;
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    p {
+        padding-bottom: 20px;
+        font-size: 16px;
+        color: #ababab;
+        font-weight: 400;
+        line-height: 1.5;
+        font-family: $Open-Sans;
+    }
+}
+
+.con-box2 {
+    width: 20%;
+    padding-top: 30px;
+
+    h2 {
+        color: $color-5;
+        font-family: $Nunito;
+        font-size: 25px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+
+    li {
+        padding-bottom: 15px;
+
+    }
+
+    a {
+        font-family: $Nunito;
+        color: #ababab;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    h4 {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: $Nunito;
+        color: #ababab;
+    }
+}
+
+// end contact //
+
+/*ABOUT US*/
+
+
+//start header-bg //
+
+#header-bg {
+    width: 100%;
+    height: 80px;
+    background: url(../images/banner-2.jpg) no-repeat center;
+    font-family: $Nunito;
+    position: absolute;
+
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    h4 {
+
+        color: $color-5;
+        width: 50%;
+        font-weight: 500;
+        margin: auto;
+        position: relative;
+        top: 45%;
+        left: 20%;
+        cursor: pointer;
+        transition: all 0.7s;
+    }
+
+    h4:hover {
+        color: $color-4;
+    }
+
+    i {
+
+        color: $color-5;
+        margin: 10px;
+        position: relative;
+        font-size: 12px;
+    }
+}
+
+#about-middle1 {
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+//end header-bg //
+
+
+//start about-flex //
+#about-flex {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.box {
+    border: 1px solid $color-11;
+    border-radius: 5px;
+    width: 49%;
+    margin-top: 20px;
+
+    h2 {
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 25px;
+        font-weight: 500;
+        color: $color-7;
+        font-family: $Nunito;
+    }
+
+    p {
+        width: 90%;
+        font-size: 18px;
+        color: #ababab;
+        font-family: 'Nunito', sans-serif;
+        padding: 10px 0px 15px 20px;
+    }
+}
+
+
+// end about-flex //
